@@ -113,7 +113,7 @@ namespace BookStore.Areas.Admin.Controllers
         }
 
 
-
+        [HttpDelete]
         public IActionResult Delete(int? id)
         {
             var productToBeDeleted = _unitOfWork.Product.Get(u => u.Id == id);
